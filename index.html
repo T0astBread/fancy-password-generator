@@ -4,15 +4,19 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="page.css">
 		<script src="generator.js"></script>
 		<script src="stylizer.js"></script>
 		<script src="controller.js" defer></script>
 		<title>Password Generator</title>
 	</head>
 	<body>
-		<h1>Password Generator</h1>
-		<p class="password-display" data-style="plain"></p>
-		<p class="password-display" data-style="charCodes"></p>
-		<button id="generateButton">Generate!</button>
+		<div class="semi-centered">
+			<img id="lock-image" src="lock.svg" alt="Lock">
+			<h1>Password Generator</h1>
+			<p class="password-display" data-style="plain"></p>
+			<p class="password-display" data-style="charCodes"></p>
+			<button class="primary" id="generateButton">Generate</button>
+		</div>
 	</body>
 </html>

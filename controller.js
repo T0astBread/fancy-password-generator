@@ -34,3 +34,4 @@ function showPasswordOnDisplay(password, display) {
 }
 
 document.getElementById("generateButton").addEventListener("click", generateAndDisplayPassword)
+generateAndDisplayPassword()

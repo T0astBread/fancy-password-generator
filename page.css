@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	/* background: rgb(0,64,189);
+	background: linear-gradient(135deg, rgba(0,64,189,1) 0%, rgba(0,109,170,1) 55%, rgba(0,212,255,1) 100%); */
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.box {
+	padding: 2em;
+	background: white;
+	box-shadow: 0 0 10px #00000082;
+	border-radius: 1rem;	
+}
+
+.semi-centered {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#lock-image {
+	height: 13rem;
+	position: absolute;
+	right: 100%;
+}
+
+.password-display {
+	line-height: 1em;
+	padding: .65em .75em;
+	font-size: 1.2em;
+	border-radius: 1rem;
+	background: #444;
+	color: white;
+}
+
+.password-display::before {
+	content: attr(data-style);
+	display: block;
+	margin-bottom: .35em;
+	opacity: .5;
+	font-size: .5em;
+	text-transform: uppercase;
+}
+
+.password-display .group {
+	margin-right: .5em;
+}
+
+button {
+	padding: 1em;
+	border-radius: .2rem;
+	background: white;
+	border: none;
+	box-shadow: 0 0 10px #00000082;
+	transition: box-shadow .25s;
+}
+
+button:hover {
+	box-shadow: 0px 2px 10px #00000082;
+}
+
+button:active {
+	box-shadow: 0 0 7px #00000082;
+}
+
+button:focus {
+	outline: none;
+}
+
+button.primary {
+	background: rgb(0,64,189);
+	color: white;
+	/* box-shadow: 0 0 10px rgba(0, 64, 189, .8); */
+}
+
+button.primary:active {
+	/* box-shadow: 0 0 5px rgba(0, 64, 189, .8); */
+}
